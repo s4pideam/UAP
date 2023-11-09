@@ -23,4 +23,6 @@ Als Paramter stehen zur Auswahl:
 
 **- detailed** Detaillierte Ansicht vom Debugging
 
+## Beispielausgabe
+
 ![Detailed Screenshot](screenshots/detailed.png)
