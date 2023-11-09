@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="ERROR">
+    <Appenders>
+        <!-- Console Appender for Debug Messages -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <ThresholdFilter level="debug" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="%msg" />
+        </Console>
+
+        <!-- File Appender for Debug Messages -->
+        <File name="File" fileName="debug.log">
+            <PatternLayout pattern="%msg" />
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <!-- Logger Configuration for Debug Messages to Console -->
+        <Logger name="consoleLogger" level="debug" additivity="false">
+            <AppenderRef ref="Console" />
+        </Logger>
+
+        <!-- Logger Configuration for Debug Messages to File -->
+        <Logger name="fileLogger" level="debug" additivity="false">
+            <AppenderRef ref="File" />
+        </Logger>
+
+        <Root level="debug">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>
+
