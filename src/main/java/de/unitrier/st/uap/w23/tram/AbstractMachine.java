@@ -319,6 +319,7 @@ public void processInstruction(Instruction instruction) {
 
             stringBuilder.append("\n");
         }
+        stringBuilder.append("\n");
 
         return stringBuilder.toString();
     }
