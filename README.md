@@ -21,4 +21,6 @@ Als Paramter stehen zur Auswahl:
 
 **- file** : Debugging Ausgabe in einer Datei (Debug.log).
 
-**- detailed** Detaillierte Ansicht vom Debugge
+**- detailed** Detaillierte Ansicht vom Debugging
+
+![Detailed Screenshot](screenshots/detailed.png)
