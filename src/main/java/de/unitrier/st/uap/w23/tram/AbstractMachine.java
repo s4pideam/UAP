@@ -12,8 +12,9 @@ public class AbstractMachine {
     public static final int LOG_FILE = 4;
     public static final int LOG_DETAILED = 8;
     private int settings = 0;
-    private final Logger consoleLogger = LogManager.getLogger("consoleLogger");
-    private final Logger fileLogger = LogManager.getLogger("fileLogger");
+    private final LoggerContext ctx = (LoggerContext) LogManager.getContext(LogManager.class.getClassLoader(), false);
+    private final Logger consoleLogger = ctx.getLogger("consoleLogger");
+    private final Logger fileLogger = ctx.getLogger("fileLogger");
 
     private final int STACK_SIZE = 32;
     private int TOP,PP,FP,PC;
